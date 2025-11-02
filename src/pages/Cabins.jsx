@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import CabinTable from "../features/cabins/CabinTable";
+import { getCabins } from "../services/apiCabins";
 import Heading from "../ui/Heading";
 import Row from "../ui/Row";
 
@@ -7,7 +9,7 @@ function Cabins() {
 		<>
 			<Row type="horizontal">
 				<Heading as="h1">All cabins</Heading>
-				<p>TEST</p>
+				<p>Filter/sort</p>
 			</Row>
 
 			<Row>
