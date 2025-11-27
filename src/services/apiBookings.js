@@ -19,7 +19,7 @@ export async function getBookings({ filter, sortBy, page }) {
 
 	// PAGINATION
 	const from = (page - 1) * PAGE_SIZE;
-	const to = form + PAGE_SIZE - 1;
+	const to = from + PAGE_SIZE - 1;
 	if (page) query = query.range(from, to);
 
 	const { data, error, count } = await query;
