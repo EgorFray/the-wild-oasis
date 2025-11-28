@@ -13,6 +13,7 @@ module.exports = {
 	plugins: ["react-refresh"],
 	rules: {
 		"no-unused-vars": "off",
+		"no-mixed-spaces-and-tabs": "off",
 		"react/prop-types": "off",
 		"react/jsx-no-undef": "off",
 		"react-refresh/only-export-components": ["warn", { allowConstantExport: true }],
