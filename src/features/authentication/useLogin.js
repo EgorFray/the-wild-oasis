@@ -10,7 +10,7 @@ export function useLogin() {
 		mutationFn: ({ email, password }) => loginApi({ email, password }),
 		// In onSuccess we can receive data that was passed to the function as an input
 		onSuccess: (user) => {
-			queryClient.setQueryData(["user"], user);
+			queryClient.setQueryData(["user"], user.user);
 			navigate("/dashboard", { replace: true });
 		},
 		onError: (err) => {
