@@ -11,7 +11,7 @@ export function useLogin() {
 		// In onSuccess we can receive data that was passed to the function as an input
 		onSuccess: (user) => {
 			queryClient.setQueriesData(["user"], user);
-			navigate("/dashboard");
+			navigate("/dashboard", { replace: true });
 		},
 		onError: (err) => {
 			console.log("ERROR:", err);
